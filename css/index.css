@@ -1,0 +1,126 @@
+.game {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-image: url(../images/sky.png);
+    background-position-x: 0px;
+    
+}
+.bird{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    margin: -15px;
+    top: 235px;
+    background-image: url(../images/birds.png);
+    background-position-x: 210px;
+    transition: top 1s;
+}
+.score{
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    display: none;
+}
+.start{
+    position: absolute;
+    left: 50%;
+    top:370px;
+    transform: translateX(-50%);
+    font-weight: bolder;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all .2s;
+}
+.start.white{
+    color: #fff;
+    font-size: 24px;
+    
+}
+.start.blue{
+    color: #09f;
+    font-size: 36px;
+}
+.mask{
+    background: #000;
+    opacity: .6;
+    position:absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+.end{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80px;
+    text-align: center;
+}
+.end .over{
+    font-size: 36px;
+    color:#f63;
+    font-weight: bold;
+}
+.end .final-result, .end .final-socre{
+    font-size:24px;
+    color: #ff0;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.end .rank-list{
+    color: #09f;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.rank-list .item{
+    height: 30px;
+    line-height: 30px;
+}
+.item .rank-degree{
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
+    background: #08b9f5;
+    color: #fff;
+    margin-right: 5px;
+
+}
+.item .rank-score{
+    display: inline-block;
+    margin-right: 10px;
+    width: 30px;
+}
+.end .rank-degree.first {
+    background-color: #f54545;
+}  
+.end .rank-degree.second {
+    background-color: #ff8547;
+}
+.end .rank-degree.third {
+    background-color: #ffac38;
+}
+.end .restart{
+    color: #09f;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.pipe{
+    width: 45px;
+}
+.pipe.pipe-up{
+    background-image: url(../images/pipe2.png);
+    background-position-y: bottom;
+}
+.pipe.pipe-down{
+    background-image: url(../images/pipe1.png);
+}
